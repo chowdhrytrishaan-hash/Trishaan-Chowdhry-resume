@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>My Resume</h2>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Trishaan Chowdhry</h1>
+        <p>+91 8383042546 | trishaan.chowdhry@email.com | New Delhi</p>
+    </header>
+
+    <!-- Education -->
+    <section id="education" class="card">
+        <h2>Education</h2>
+        <p><strong>B.Sc. (Hons.) Mathematics (Pursuing)</strong><br>
+        Sri Venkateswara College, University of Delhi</p>
+
+        <p><strong>BBA (DBE) (Pursuing)</strong><br>
+        IIM Bangalore</p>
+
+        <p><strong>Class XII</strong><br>
+        DPS Mathura Road, New Delhi | 2025</p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="card">
+        <h2>Experience</h2>
+        <ul>
+            <li>Operated tuck shops as a summer business project</li>
+            <li>Managed pricing, sales, and inventory</li>
+            <li>Handled customers and cash flow</li>
+        </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section class="card">
+        <h2>Achievements</h2>
+        <ul>
+            <li>1st position in drama competitions (multiple times)</li>
+            <li>3rd position in debates</li>
+            <li>School cricket team bowler</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Analytical Thinking</li>
+            <li>Public Speaking</li>
+            <li>Teamwork & Leadership</li>
+            <li>Entrepreneurship</li>
+        </ul>
+    </section>
+
+    <!-- Interests -->
+    <section class="card">
+        <h2>Interests</h2>
+        <p>Football | Movies</p>
+    </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
